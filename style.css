@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+:root {
+--Nutmeg: hsl(14, 45%, 36%);
+--DarkRaspberry: hsl(332, 51%, 32%);
+--White: hsl(0, 0%, 100%);
+--RoseWhite: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--LightGrey: hsl(30, 18%, 87%);
+--WengeBrown: hsl(30, 10%, 34%);
+--DarkCharcoal: hsl(24, 5%, 18%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: "Outfit";
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--WengeBrown);
+}
+.wrapper {
+    background-color: var(--White);
+    padding: 2rem;
+    width: 48vw;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section {
+    padding: 1.5rem 1rem;
+}
+.img_container > img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.page_title {
+    font-family: "Young Serif";
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--DarkCharcoal);
+}
+.prep {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: hsla(332, 51%, 32%, 0.07);
+}
+.prep > .section_title {
+    color: var(--DarkRaspberry);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.prep > .section_content > ul {
+    line-height: 2rem;
+    margin: 0;
+}
+.prep > .section_content > ul > li {
+    padding-left: 1rem;
+}
+.subHead {
+    font-weight: 600;
+}
+.ingr > .section_title, .inst > .section_title, .nutr > .section_title {
+    font-family: "Young Serif";
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--Nutmeg)
+}
+.ingr > .section_content > ul {
+    margin: 0;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+.ingr > .section_content > ul > li {
+    padding-left: 1rem;
+}
+.ingr > .section_content > ul > li::marker {
+    color: var(--DarkRaspberry);
+}
+.ingr, .inst {
+    border-bottom: 1px solid var(--LightGrey);
+}
+.inst > .section_content > ol {
+    margin: 0;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+.inst > .section_content > ol > li::marker {
+    color: var(--DarkRaspberry);
+    font-weight: 700;
+}
+.inst > .section_content > ol > li {
+    padding-left: 1rem;
+}
+.NutritionTable {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+.NutritionTable tbody > tr > td.tbNutVals {
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+.NutritionTable tbody > tr, td {
+    border-bottom: 1px solid var(--LightGrey);
+    padding: 1rem;
+}
